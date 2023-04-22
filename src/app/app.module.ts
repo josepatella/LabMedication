@@ -10,6 +10,7 @@ import { UsuariosModule } from './cadastro-usuario/usuarios/usuarios.module';
 import { FormsModule } from '@angular/forms';
 import { SidebarModule } from 'ng-sidebar';
 import { CadastroPacienteComponent } from './cadastro-paciente/cadastro-paciente.component';
+import { CadastroMedicamentoComponent } from './cadastro-medicamento/cadastro-medicamento.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CadastroPacienteComponent } from './cadastro-paciente/cadastro-paciente
     LoginComponent,
     CadastroUsuarioComponent,
     CadastroPacienteComponent,
+    CadastroMedicamentoComponent,
   ],
   imports: [
     BrowserModule,
