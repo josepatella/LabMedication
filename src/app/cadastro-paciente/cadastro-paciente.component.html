@@ -1,0 +1,182 @@
+<section class="container w-50 p-5 my-5 border rounded">
+  <h1 class="text-primary">Cadastro Paciente</h1>
+  <div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-outline-primary disabled mx-2">
+      Editar
+    </button>
+    <button type="button" class="btn btn-outline-primary disabled mx-2">
+      Deletar
+    </button>
+    <button type="button" class="btn btn-outline-primary mx-2">Salvar</button>
+  </div>
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <label for="nomeCompleto">Nome Completo</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nomeCompleto"
+          placeholder="Nome"
+        />
+      </div>
+      <div class="d-flex justify-content-between">
+      <div class="form-group col-md-3">
+        <label for="sexo">Sexo</label>
+        <select id="sexo" class="form-control">
+          <option>Feminino</option>
+          <option>Masculino</option>
+        </select>
+      </div>
+      <div class="form-group col-md-4 mx-3">
+        <label for="dataNascimento">Data de Nascimento</label>
+        <input
+          type="date"
+          class="form-control"
+          id="dataNascimento"
+          placeholder="Data de Nascimento"
+        />
+      </div>
+      <div class="form-group col-md-4">
+        <label for="cpf">CPF</label>
+        <input
+          type="text"
+          class="form-control"
+          id="cpf"
+          placeholder="000.000.000-00"
+        />
+      </div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <div class="form-group col-md-7">
+        <label for="rg">RG</label>
+        <input
+          type="text"
+          class="form-control"
+          id="rg"
+          placeholder="0000000000 xxx"
+        />
+      </div>
+      <div class="form-group col-md-4">
+        <label for="telefone">Telefone</label>
+        <input
+          type="text"
+          class="form-control"
+          id="telefone"
+          placeholder="(00)0 0000-0000"
+        />
+      </div>
+    </div>
+    <div class="d-flex justify-content-between">
+    <div class="form-group col-md-3">
+      <label for="estadoCivil">Estado Civil</label>
+      <select id="estadoCivil" class="form-control">
+        <option>Solteiro</option>
+        <option>Casado</option>
+        <option>Separado</option>
+        <option>Divorciado</option>
+        <option>Viúvo</option>
+      </select>
+    </div>
+      <div class="form-group col-md-4">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="xxxx@xxxx.xx.xx"
+        />
+      </div>
+      <div class="form-group col-md-4">
+        <label for="naturalidadel">Naturalidade</label>
+        <input type="text" class="form-control" id="naturalidade" />
+      </div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <div class="form-group col-md-4">
+        <label for="contatoEmergencia">Contato de Emergência</label>
+        <input
+          type="text"
+          class="form-control"
+          id="contatoEmergencia"
+          placeholder="(00)0 0000-0000"
+        />
+      </div>
+      <div class="form-group col-md-7">
+        <label for="listaAlergias">Lista de Alergias</label>
+        <input type="text" class="form-control" id="listaAlergias" />
+      </div>
+    </div>
+      <div class="form-group col-md-12">
+        <label for="cuidadosEspecificos">Lista de Cuidados Específicos</label>
+        <input type="text" class="form-control" id="cuidadosEspecificos" />
+      </div>
+      <div class="d-flex justify-content-between">
+      <div class="form-group col-md-3">
+        <label for="convenio">Convênio</label>
+        <input type="text" class="form-control" id="convenio" />
+      </div>
+      <div class="form-group col-md-4">
+        <label for="numeroConvenio">Número do Convênio</label>
+        <input type="number" class="form-control" id="numeroConvenio" />
+      </div>
+      <div class="form-group col-md-4">
+        <label for="validadeConvenio">Validade do Convênio</label>
+        <input type="date" class="form-control" id="validadeConvenio" />
+      </div>
+    </div>
+    </div>
+    <div class="form-row mb-3">
+      <p class="mt-3">Endereço</p>
+      <div class="d-flex justify-content-between">
+      <div class="form-group col-md-3">
+        <label for="CEP">CEP</label>
+        <input
+          type="text"
+          class="form-control"
+          id="CEP"
+          placeholder="000.000-00"
+        />
+      </div>
+      <div class="form-group col-md-6">
+        <label for="cidade">Cidade</label>
+        <input type="text" class="form-control" id="cidade" />
+      </div>
+      <div class="form-group col-md-2">
+        <label for="estado">Estado</label>
+        <select id="estado" class="form-control">
+          <option selected>Escolher...</option>
+          <option>...</option>
+        </select>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <div class="form-group col-md-8">
+        <label for="logradouro">Logradouro</label>
+        <input type="text" class="form-control" id="logradouro"/>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="numero">Número</label>
+        <input type="number" class="form-control" id="numero"/>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <div class="form-group col-md-3">
+        <label for="complemento">Complemento</label>
+        <input type="text" class="form-control" id="complemento"/>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="bairro">Bairro</label>
+        <input type="text" class="form-control" id="Bairro"/>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="pontoReferencia">Ponto de referência</label>
+        <input type="text" class="form-control" id="pontoReferencia"/>
+      </div>
+    </div>
+    </div>
+    <button type="submit" class="btn btn-outline-primary mb-3">
+      Cadastrar Paciente
+    </button>
+  </form>
+</section>

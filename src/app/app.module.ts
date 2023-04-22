@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.component';
 import { UsuariosModule } from './cadastro-usuario/usuarios/usuarios.module';
 import { FormsModule } from '@angular/forms';
+import { SidebarModule } from 'ng-sidebar';
+import { CadastroPacienteComponent } from './cadastro-paciente/cadastro-paciente.component';
 
 @NgModule({
   declarations: [
@@ -15,13 +17,15 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     LoginComponent,
     CadastroUsuarioComponent,
+    CadastroPacienteComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     UsuariosModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SidebarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
