@@ -1,2 +1,17 @@
-<router-outlet></router-outlet>
-
+<ng-sidebar-container style = "height: 100vh">
+  <ng-sidebar [(opened)]="abrir" mode = "push" >
+    <nav class="navbar navbar-dark bg-primary px-2 h-100 d-inline-block">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" routerLink="/login">Login</a>
+      <a class="nav-item nav-link active" routerLink="/home">Estatística</a>
+      <a class="nav-item nav-link active" routerLink="/cadastro-paciente">Cadastro Paciente</a>
+      <a class="nav-item nav-link active" routerLink="/cadastro-medicamento">Cadastro Medicamentos</a>
+      <a class="nav-item nav-link active" routerLink="/">Sair</a>
+    </div>
+  </nav>
+  </ng-sidebar>
+  <div ng-sidebar-content>
+      <button class="btn btn-outline-primary"(click)="barraLateral()">Menu</button>
+      <router-outlet></router-outlet>
+  </div>
+</ng-sidebar-container>

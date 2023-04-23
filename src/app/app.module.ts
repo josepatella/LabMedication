@@ -27,7 +27,7 @@ import { CadastroMedicamentoComponent } from './cadastro-medicamento/cadastro-me
     UsuariosModule,
     FormsModule,
     ReactiveFormsModule,
-    SidebarModule
+    SidebarModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,7 +10,7 @@
     <input [(ngModel)]="loginObj.senha" name="senha" type="password" class="form-control" id="senha" placeholder="Senha" required minlength="10">
   </div>
   <div class="d-flex justify-content-between align-items-baseline">
-  <button type="submit" class="btn btn-outline-primary mb-3">Entrar</button>
+  <button type="submit" class="btn btn-outline-primary mb-3"routerLink="/home">Entrar</button>
   <a class="nav-link active" aria-current="page" routerLink="/login" (click)="alerta = true">Esqueceu sua senha?</a>
 </div>
 <div *ngIf="alerta" class="alert alert-primary" role="alert">

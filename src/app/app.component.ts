@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Medicine';
+
+  abrir: boolean = false;
+
+barraLateral() {
+  this.abrir = !this.abrir;
 }
+}
+
